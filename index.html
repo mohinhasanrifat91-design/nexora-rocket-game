@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050b25">
+  <title>NEXORA — Rocket Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand-mark">N</div>
+      <div><h1>NEXORA</h1><p>TELEGRAM MINI APP</p></div>
+      <span class="verified">✓</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">🚀 NEXORA ARCADE</div>
+      <h2>ROCKET <span>RUN</span></h2>
+      <p>Launch, dodge and collect points!</p>
+      <div class="rocket" id="rocket">🚀</div>
+      <div class="score" id="score">0 <small>PTS</small></div>
+    </section>
+
+    <section class="balance panel">
+      <div><span class="muted">Your points</span><strong id="points">100</strong></div>
+      <span class="coin">✦</span>
+    </section>
+
+    <section class="panel game-panel">
+      <div class="section-head"><h3>Rocket Run</h3><span class="tag">ARCADE</span></div>
+      <p class="muted">Tap launch, then collect stars while avoiding obstacles. No deposits, wagers or cash withdrawals.</p>
+      <div class="game-track"><div class="track-line"></div><div class="star">✦</div><div class="obstacle">☄</div></div>
+      <button id="launch">🚀 Launch rocket</button>
+      <p class="hint" id="message">Ready when you are.</p>
+    </section>
+
+    <section class="grid">
+      <button class="tile" data-page="referral"><span>👥</span><b>Referral</b><small>Invite friends</small></button>
+      <button class="tile" data-page="history"><span>📜</span><b>History</b><small>Your scores</small></button>
+      <button class="tile" data-page="leaderboard"><span>🏆</span><b>Leaderboard</b><small>Top players</small></button>
+      <button class="tile" data-page="profile"><span>👤</span><b>Profile</b><small>Your account</small></button>
+    </section>
+
+    <section class="panel page" id="page">
+      <h3>Welcome to NEXORA</h3>
+      <p class="muted">Choose a section above to view its demo content.</p>
+    </section>
+
+    <nav class="bottom">
+      <button class="active" data-page="home">⌂<small>Home</small></button>
+      <button data-page="game">🚀<small>Game</small></button>
+      <button data-page="leaderboard">🏆<small>Ranks</small></button>
+      <button data-page="profile">👤<small>Me</small></button>
+    </nav>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
